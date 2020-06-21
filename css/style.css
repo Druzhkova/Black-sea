@@ -237,6 +237,7 @@ ul a {
  }
 
  .contact__circle {
+  max-width:100%;
   margin: 2.80em auto;
   z-index: 1;
   opacity: 0.85;
