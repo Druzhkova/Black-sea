@@ -9,3 +9,28 @@
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .learn__icon {
+    display: none;
+  }
+  .review__person-photo {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 455px) {
+  .contact__circle {
+    width: 91.47vw;
+    height: 91.47vw;
+  }
+  .contact__form {
+    position: static;
+    width: 60.66vw;
+    margin: 25vw auto 0;
+  }
+  .contact__check {
+    display: none;
+  }
+}
