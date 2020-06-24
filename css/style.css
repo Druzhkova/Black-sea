@@ -130,7 +130,15 @@ ul a {
  }
 
  .banner__ellipse {
-   padding: 0 0.47em;
+  width: 9px;
+  height: 9px;
+  margin: 0 0.375em;
+  border-radius: 50%;
+  background: #fff;
+ }
+
+ .banner__ellipse--grey {
+   background: #69728C;
  }
 
  .gamburger {
@@ -172,7 +180,6 @@ ul a {
  }
 
  .learn__title {
-   max-width: 21em;
    margin: calc(40px + 3.90626vw) 0 0;
    font-size: calc(20px + 0.65104vw);
    color: #4C505D;
@@ -180,19 +187,19 @@ ul a {
 
  .learn__subtitle {
    margin: calc(20px + 1.6276vw) 0 calc(40px + 1.953128vw);
-   font-size: 0.875em;
+   font-size: calc(14px + 0.260418vw);
    color: #4C505D;
  }
 
  .learn__icon {
-   margin-bottom: 5em;
    display: flex;
    justify-content: space-around;
-   flex-wrap: wrap;
+   margin-bottom: 4.44444em;
+   font-size: calc(14px + 0.260418vw);
  }
 
- .learn__planet {
-   padding: 0 calc(50px + 5.8vw);
+ .icon {
+   padding: 0 calc(15px + 3.0599vw);
  }
 
    /* Section review
@@ -216,8 +223,8 @@ ul a {
   opacity: 0.2;
 }
 
-.review__text {
-  margin:0 0 calc(40px + 3.58073vw) 0;
+.quote__text {
+  margin:0 0 4.44444em 0;
   font-size: calc(14px + 0.260418vw);
   color: #FFFFFF;
 }
@@ -245,7 +252,7 @@ ul a {
 
 .review__person {
   display: flex;
-  margin: calc(20px + 5.013vw) 0 calc(20px + 2.8vw);
+  margin: calc(40px + 3.90626vw) 0 calc(20px + 2.8vw);
 }
 
  /* Section contact
@@ -259,6 +266,9 @@ ul a {
 }
 
  .contact__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 26.9375em;
   height: 26.9375em;
@@ -272,12 +282,20 @@ ul a {
 
 .contact__check {
   position: absolute;
-  bottom: 3.125em;
-  right: 11.25em;
-  width: 4.25em;
-  height: 4.25em;
+  align-self: flex-end;
+  bottom: calc(10px + 2vw);
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   background: #00D089;
+}
+
+.contact__form {
+  position: absolute;
+  bottom: 150px;
+  width: 17.25em;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__check::before {
@@ -302,15 +320,6 @@ ul a {
   background: #fff;
   border-radius: 10%;
   transform: rotate(-45deg);
-}
-
-.contact__form {
-  position: absolute;
-  bottom: 9.375em;
-  left: 5em;
-  width: 17.25em;
-  display: flex;
-  flex-direction: column;
 }
 
 .contact__input {
